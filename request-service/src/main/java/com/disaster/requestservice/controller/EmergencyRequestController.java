@@ -1,5 +1,6 @@
 package com.disaster.requestservice.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.disaster.requestservice.entity.EmergencyRequest;
 import com.disaster.requestservice.service.EmergencyRequestService;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/requests")
+@CrossOrigin(origins = "http://localhost:3000")
 public class EmergencyRequestController {
 
     private final EmergencyRequestService requestService;

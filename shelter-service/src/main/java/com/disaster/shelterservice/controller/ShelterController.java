@@ -1,5 +1,6 @@
 package com.disaster.shelterservice.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.disaster.shelterservice.entity.Shelter;
 import com.disaster.shelterservice.service.ShelterService;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api/shelters")
 public class ShelterController {
 

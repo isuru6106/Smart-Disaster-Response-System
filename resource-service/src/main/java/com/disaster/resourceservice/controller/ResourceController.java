@@ -1,5 +1,6 @@
 package com.disaster.resourceservice.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.disaster.resourceservice.entity.Resource;
 import com.disaster.resourceservice.service.ResourceService;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/resources")
+@CrossOrigin(origins = "http://localhost:3000")
 public class ResourceController {
 
     private final ResourceService resourceService;
